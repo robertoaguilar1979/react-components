@@ -2,8 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  let title = "hello world title";
-  let paragraph = "whats up paragraph";
+  let title = "Maps In React";
+  let paragraph = "this is a paragraph";
   let comments = [
     { id: 1, comment: "hello world 1" },
     { id: 2, comment: "hello world 2" },
