@@ -1,0 +1,11 @@
+.app-div h1 {
+  text-align: center;
+  padding: 1em;
+  background-color: red;
+}
+
+.app-div p {
+  text-align: center;
+  background-color: blue;
+  padding: 1em;
+}
