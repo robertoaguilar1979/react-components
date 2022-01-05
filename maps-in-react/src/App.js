@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
   let title = "Maps In React";
@@ -10,9 +11,21 @@ function App() {
     { id: 3, comment: "hello world 3" },
   ];
 
-  let loading = false;
-  let showComments = true;
+  // useState functions
+  const [numbers, setNumbers] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  const [names, setNames] = useState(["react", "angular", "vue"]);
 
+  // map through useState
+
+  const numberList = numbers.map((number) => {
+    return <li>{number}</li>;
+  });
+
+  const namesList = names.map((names) => {
+    return <li>{names}</li>;
+  });
+
+  let showComments = true;
   return (
     <div className="app-div">
       <h1>{title.toLowerCase()}</h1>
@@ -27,6 +40,8 @@ function App() {
             </li>
           ))}
         </ul>
+        <ul>{numberList}</ul>
+        <ul>{namesList}</ul>
       </div>
     </div>
   );
