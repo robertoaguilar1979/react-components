@@ -5,6 +5,7 @@ import { useState } from "react";
 function App() {
   let title = "Maps In React";
   let paragraph = "this is a paragraph";
+
   let comments = [
     { id: 1, comment: "hello world 1" },
     { id: 2, comment: "hello world 2" },
@@ -26,6 +27,7 @@ function App() {
   });
 
   let showComments = true;
+
   return (
     <div className="app-div">
       <h1>{title.toLowerCase()}</h1>
@@ -40,8 +42,8 @@ function App() {
             </li>
           ))}
         </ul>
-        <ul>{numberList}</ul>
-        <ul>{namesList}</ul>
+        <ul className="pink">{numberList}</ul>
+        <ul className="gray">{namesList}</ul>
       </div>
     </div>
   );
