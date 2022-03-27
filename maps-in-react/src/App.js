@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+import React, { useState } from "react";
 
 function App() {
   let title = "Maps In React";
@@ -15,11 +15,29 @@ function App() {
   // useState functions
   const [numbers, setNumbers] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   const [names, setNames] = useState(["react", "angular", "vue"]);
+  const [commentState, setCommentState] = useState(comments);
 
-  // map through useState
+  console.log(commentState);
+  const removeItem = function (id) {
+    const deleteList = commentState.filter((number) => number.id !== id);
+    setCommentState(deleteList);
 
-  const numberList = numbers.map((number) => {
-    return <li>{number}</li>;
+    // setNumbers((prevEvents) => {
+    //   return prevEvents.filter((index) => {
+    //     return id !== index;
+    //   });
+    // });
+  };
+
+  // // map through useState
+
+  const numberList = commentState.map((value, index) => {
+    return (
+      <div key={value.id}>
+        <li>{value.comment}</li>
+        <button onClick={() => removeItem(value.id)}>delete</button>
+      </div>
+    );
   });
 
   const namesList = names.map((names) => {
