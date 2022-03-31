@@ -21,12 +21,6 @@ function App() {
   const removeItem = function (id) {
     const deleteList = commentState.filter((number) => number.id !== id);
     setCommentState(deleteList);
-
-    // setNumbers((prevEvents) => {
-    //   return prevEvents.filter((index) => {
-    //     return id !== index;
-    //   });
-    // });
   };
 
   // // map through useState
