@@ -18,6 +18,7 @@ function App() {
   const [commentState, setCommentState] = useState(comments);
 
   console.log(commentState);
+
   const removeItem = function (id) {
     const deleteList = commentState.filter((number) => number.id !== id);
     setCommentState(deleteList);
