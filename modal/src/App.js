@@ -1,9 +1,19 @@
 import "./App.css";
+import Modal from "./components/Modal";
 
 function App() {
   return (
     <div className="App">
-      <h1>clean up code</h1>
+      <header>Modal Header</header>
+      <Modal>
+        <h1>This is a modal h1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ea
+          magnam fugiat modi est necessitatibus ratione corrupti harum
+          voluptatibus aspernatur nemo neque, consequuntur tempora dolores at
+          assumenda. Corporis, quidem mollitia?
+        </p>
+      </Modal>
     </div>
   );
 }
