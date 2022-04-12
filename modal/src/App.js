@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header>Modal Header</header>
       <Modal>
-        <h1>This is a modal h1</h1>
+        <h1>This is a modal</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ea
           magnam fugiat modi est necessitatibus ratione corrupti harum

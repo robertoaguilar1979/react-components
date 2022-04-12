@@ -1,11 +1,12 @@
 import React from "react";
+import "../App.css";
 
 function Modal({ children }) {
   return (
-    <React.Fragment>
-      <button>&times;</button>
+    <div className="modal">
+      <button className="modal-btn">&times;</button>
       {children}
-    </React.Fragment>
+    </div>
   );
 }
 
