@@ -32,14 +32,15 @@ header {
 }
 .modal-btn {
   background: transparent;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  /* border-width: 1px; */
   cursor: pointer;
-  padding: 0 0.25em;
-  border-width: 1px;
+  padding: 0 0.2em;
   font-size: 4rem;
   right: 0;
   top: 0;
   margin-right: 0.12em;
   margin-top: 5px;
   position: absolute;
+  border-style: none;
 }
