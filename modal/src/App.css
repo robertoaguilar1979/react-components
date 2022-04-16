@@ -13,3 +13,11 @@ header {
   text-align: center;
   padding: 3em;
 }
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 3em;
+  max-width: 600px;
+  margin: 0 auto;
+}

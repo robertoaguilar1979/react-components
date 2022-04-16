@@ -21,7 +21,21 @@ function App() {
 
   return (
     <div className="App">
-      <header>Modal Header</header>
+      <header>
+        <h1>Modal Header</h1>
+      </header>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+        facere, tenetur dolores qui veniam maiores ipsa id minima cumque? Culpa
+        quasi aspernatur labore nam perferendis esse itaque exercitationem
+        suscipit hic?
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        nesciunt magnam earum, facere quisquam, non voluptates minima ipsum
+        vitae incidunt reiciendis iusto velit nihil dolorem. Obcaecati ipsam
+        deserunt voluptatem consequuntur?
+      </p>
       {isOpen && (
         <Modal closeModal={closeModal}>
           <h1>This is a modal</h1>

@@ -10,11 +10,14 @@ function Modal({ children, closeModal }) {
   // const root = createRoot(rootElement);
 
   return createPortal(
-    <div className="modal">
-      <button className="modal-btn" onClick={closeModal}>
-        &times;{" "}
-      </button>
-      {children}
+    <div className="overlay">
+      <div className="modal">
+        <button className="modal-btn" onClick={closeModal}>
+          &times;{" "}
+        </button>
+        {children}
+      </div>
+      ,
     </div>,
     document.getElementById("root")
   );
