@@ -3,14 +3,14 @@ import "./App.css";
 import Modal from "./components/Modal";
 
 function App() {
-  const [modalBtn, setModalBtn] = useState(false);
+  const [isOpen, setisOpen] = useState(false);
 
-  let handleModalBtn = () => {
-    setModalBtn(false);
+  let closeModal = () => {
+    setisOpen(false);
   };
   useEffect(() => {
     const timer = setTimeout(() => {
-      setModalBtn(true);
+      setisOpen(true);
       console.log("the timer works");
     }, 5000);
 
@@ -22,8 +22,8 @@ function App() {
   return (
     <div className="App">
       <header>Modal Header</header>
-      {modalBtn && (
-        <Modal handleModalBtn={handleModalBtn}>
+      {isOpen && (
+        <Modal closeModal={closeModal}>
           <h1>This is a modal</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ea
