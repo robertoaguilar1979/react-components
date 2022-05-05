@@ -1,6 +1,6 @@
 # react-components
 
-#this contains react components these are just small snipets of how to use concepts in react.
+#this contains react components these are just small snipets of how to use concepts/components in react.
 
 1. counter-app-useState - how to use useState in react I build a counter app.
 
