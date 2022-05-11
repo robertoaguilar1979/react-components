@@ -7,6 +7,7 @@ function TextInput() {
       <div className="form">
         <form action="">
           <h2>text display</h2>
+          <p className="textInputStyle">{textInput}</p>
           <input
             type="text"
             onChange={(event) => {
@@ -14,8 +15,6 @@ function TextInput() {
             }}
           />
         </form>
-
-        <p>{textInput}</p>
       </div>
     </div>
   );
