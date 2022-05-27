@@ -8,7 +8,8 @@ function App() {
   let getUsers = async () => {
     let response = await fetch(url);
     let users = await response.json();
-    console.log(users);
+    setUsers(users);
+    //console.log(users);
   };
 
   useEffect(() => {
@@ -18,6 +19,20 @@ function App() {
   return (
     <div className="App">
       <h1>hello world</h1>
+      <div>
+        {users.map((user) => {
+          console.log(user);
+          return (
+            <ul key={user.id}>
+              <li>{user.login}</li>
+              <a href={user.html_url} target="_blank">
+                link
+              </a>
+              <img src={user.avatar_url} alt="" />
+            </ul>
+          );
+        })}
+      </div>
     </div>
   );
 }
