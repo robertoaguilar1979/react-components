@@ -3,8 +3,19 @@
 }
 ul {
   list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  border-radius: 15px;
+  margin-bottom: 2em;
+  background-color: rgb(180, 179, 179);
+}
+a {
+  display: block;
+  margin: 1em 0;
 }
 .container {
+  margin: 0 auto;
   max-width: 300px;
 }
 

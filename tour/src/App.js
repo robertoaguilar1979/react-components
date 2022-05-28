@@ -24,7 +24,7 @@ function App() {
           console.log(user);
           return (
             <ul key={user.id}>
-              <li>{user.login}</li>
+              <h2>{user.login}</h2>
               <a href={user.html_url} target="_blank">
                 link
               </a>
