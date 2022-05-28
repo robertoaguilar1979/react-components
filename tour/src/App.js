@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <h1>hello world</h1>
-      <div>
+      <div className="container">
         {users.map((user) => {
           console.log(user);
           return (
