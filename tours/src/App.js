@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      <Tours />
+      <Tours items={tours} />
     </div>
   );
 }

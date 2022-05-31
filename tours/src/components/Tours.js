@@ -1,10 +1,16 @@
 import React from "react";
 import Tour from "./Tour";
 
-const Tours = () => {
+const Tours = ({ items }) => {
   return (
     <div>
-      <h2>tours component</h2>
+      <h1 className="title">tours component</h1>
+
+      <div className="items">
+        {items.map((item) => {
+          return <Tour key={item.key} {...item}></Tour>;
+        })}
+      </div>
     </div>
   );
 };
