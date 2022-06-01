@@ -32,3 +32,12 @@ img {
   object-fit: cover;
   height: 20rem;
 }
+
+.show {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(44, 9, 245);
+}
