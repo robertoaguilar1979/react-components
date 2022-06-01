@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import Loading from "./components/Loading";
 import Tours from "./components/Tours";
-
+import Tour from "./components/Tour";
 const url = "https://course-api.com/react-tours-project";
 
 function App() {
@@ -21,6 +21,11 @@ function App() {
     }
   };
 
+  let removeTours = function (id) {
+    let removeItem = tours.filter((item) => item.id !== id);
+    setTours(removeItem);
+  };
+
   useEffect(() => {
     fetchTours();
   }, []);
@@ -32,10 +37,17 @@ function App() {
       </div>
     );
   }
-
+  if (tours.length === 0) {
+    return (
+      <div className="refresh">
+        <h1>no tours left</h1>
+        <button onClick={() => fetchTours()}>refresh</button>
+      </div>
+    );
+  }
   return (
     <div className="App">
-      <Tours items={tours} />
+      <Tours items={tours} removeTours={removeTours} />
     </div>
   );
 }

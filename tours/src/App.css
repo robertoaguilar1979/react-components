@@ -41,3 +41,11 @@ img {
   display: inline-block;
   color: rgb(44, 9, 245);
 }
+
+.refresh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+}
