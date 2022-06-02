@@ -1,3 +1,44 @@
 .App {
   text-align: center;
 }
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.75em;
+  color: aliceblue;
+  background-color: rgb(85, 85, 228);
+  padding: 0.25em;
+  border-radius: 50%;
+}
+
+.text {
+  text-align: center;
+  max-width: 350px;
+}
+
+.reviews {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
