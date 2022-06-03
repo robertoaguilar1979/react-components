@@ -6,6 +6,25 @@ const Review = () => {
   const [index, setIndex] = useState(0);
   const { name, id, job, image, text } = people[index];
 
+  let trackIndex = function (number) {
+    if (number > people.length - 1) {
+      return 0;
+    }
+    if (number < 0) {
+      return people.length - 1;
+    } else {
+      return number;
+    }
+  };
+
+  let nextPerson = function () {
+    setIndex((person) => trackIndex(person + 1));
+  };
+
+  let previousPerson = function () {
+    setIndex((person) => trackIndex(person - 1));
+  };
+
   return (
     <>
       <h2>review component</h2>
@@ -23,10 +42,10 @@ const Review = () => {
           <p>{text}</p>
         </div>
         <div className="btn-container">
-          <button>
+          <button onClick={previousPerson}>
             <FaChevronLeft />
           </button>
-          <button>
+          <button onClick={nextPerson}>
             <FaChevronRight />
           </button>
         </div>
