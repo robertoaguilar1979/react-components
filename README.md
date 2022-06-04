@@ -9,3 +9,9 @@
 3. modal - this is a modal component that pops up when you first arrive into the website. It can be used to sign in subcribers.
 
 4. reset-list - this is a simple list that clears when you press the clear button.
+
+5. useEffect - this components shows how to use the useEffect hook in different ways.
+
+6. tours - this components uses useEffect, useState, how to toggle on/off
+
+7. reviews -
