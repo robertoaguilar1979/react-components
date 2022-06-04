@@ -25,6 +25,9 @@ const Review = () => {
     setIndex((person) => trackIndex(person - 1));
   };
 
+  let randomGenerator = function () {
+    setIndex(Math.floor(Math.random() * people.length));
+  };
   return (
     <>
       <h2>review component</h2>
@@ -50,7 +53,9 @@ const Review = () => {
           </button>
         </div>
         <div>
-          <button>random</button>
+          <button className="random-btn" onClick={randomGenerator}>
+            random
+          </button>
         </div>
       </article>
     </>

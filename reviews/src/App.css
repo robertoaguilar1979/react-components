@@ -42,3 +42,11 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+.random-btn {
+  margin-top: 0.75em;
+}
+
+.btn-container button {
+  margin-left: 0.5em;
+}
