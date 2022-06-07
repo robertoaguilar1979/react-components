@@ -14,4 +14,6 @@
 
 6. tours - this components uses useEffect, useState, how to toggle on/off
 
-7. reviews -
+7. reviews - cycle through different reviews using right and left chevrons.
+
+8. accordion -
