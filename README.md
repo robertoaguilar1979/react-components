@@ -16,4 +16,6 @@
 
 7. reviews - cycle through different reviews using right and left chevrons.
 
-8. accordion -
+8. accordion - use button plus or minus to open or close an the accordion button to reveal or close the paragraph.
+
+9. menu -
