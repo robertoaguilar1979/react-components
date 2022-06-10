@@ -6,7 +6,37 @@
 }
 
 img {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+p {
+  max-width: 400px;
+  margin-top: 0.5em;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1em;
+  gap: 20px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  margin-top: 1em;
+  padding: 1em;
+}
+header > p {
+  margin-left: 1em;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
