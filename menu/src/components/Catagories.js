@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Data from "../data/data";
 
-function Catagories({ filterFunction, setInformation }) {
+function Catagories({ filterFunction, catagories }) {
   return (
     <div>
-      <button onClick={setInformation}> all </button>
-      <button onClick={() => filterFunction("breakfast")}> breatfast </button>
-      <button onClick={() => filterFunction("lunch")}> lunch</button>
-      <button onClick={() => filterFunction("shakes")}> shakes </button>
+      {catagories.map((item, index) => {
+        return (
+          <button
+            type="button"
+            key={index}
+            onClick={() => filterFunction(item)}
+          >
+            {item}
+          </button>
+        );
+      })}
     </div>
   );
 }
