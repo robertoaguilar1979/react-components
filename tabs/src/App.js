@@ -12,7 +12,13 @@ function App() {
   const [jobs, setJobs] = useState([]);
   const [value, setValue] = useState(0);
 
+  let fetchJobs = async () => {
+    let response = await fetch(url);
+    let newJobs = await response.json();
 
+    setJobs(newJobs);
+    setLoading(false);
+  }
 
   return ( <
     div className = "App" >
