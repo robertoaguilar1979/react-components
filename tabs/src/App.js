@@ -15,10 +15,17 @@ function App() {
   let fetchJobs = async () => {
     let response = await fetch(url);
     let newJobs = await response.json();
+    console.log(newJobs);
 
     setJobs(newJobs);
     setLoading(false);
   }
+
+
+  useEffect(() => {
+    fetchJobs();
+  }, [])
+
 
   return ( <
     div className = "App" >
