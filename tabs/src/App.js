@@ -30,9 +30,22 @@ function App() {
       </section>
     );
   }
+  const { id, title, dates, duties, company } = jobs[value];
   return (
     <div>
       <h1> tabs components </h1> <Tabs />
+      <div key={id}>
+        <h2>{title}</h2>
+        <p>{dates}</p>
+        <p>{company}</p>
+        {duties.map((value, index) => {
+          return (
+            <div key={index}>
+              <p>{value}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
