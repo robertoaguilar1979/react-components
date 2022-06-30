@@ -34,6 +34,14 @@ function App() {
   return (
     <div>
       <h1> tabs components </h1> <Tabs />
+      {/* button */}
+      {jobs.map((item, index) => {
+        return (
+          <button key={item.id} onClick={() => setValue(index)}>
+            {item.company}
+          </button>
+        );
+      })}
       <div key={id}>
         <h2>{title}</h2>
         <p>{dates}</p>
