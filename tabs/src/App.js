@@ -32,9 +32,10 @@ function App() {
   }
   const { id, title, dates, duties, company } = jobs[value];
   return (
-    <div>
-      <h1> tabs components </h1> <Tabs />
-      {/* button */}
+    <div className="App">
+      <h1> tabs components </h1>
+      <Tabs />
+      {/************  button ****************/}
       {jobs.map((item, index) => {
         return (
           <button key={item.id} onClick={() => setValue(index)}>
@@ -42,15 +43,15 @@ function App() {
           </button>
         );
       })}
-      <div key={id}>
+      <div key={id} className="tab-information">
         <h2>{title}</h2>
         <p>{dates}</p>
         <p>{company}</p>
         {duties.map((value, index) => {
           return (
-            <div key={index}>
-              <p>{value}</p>
-            </div>
+            <ul key={index}>
+              <li>{value}</li>
+            </ul>
           );
         })}
       </div>
