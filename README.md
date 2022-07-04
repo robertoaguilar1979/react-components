@@ -20,4 +20,6 @@
 
 9. menu - click on buttons to filter different menu items from a list.
 
-10. tabs -
+10. tabs - click through tabs to cycle through and display different pages.
+
+11. slider -
