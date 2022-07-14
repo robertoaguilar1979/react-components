@@ -12,6 +12,26 @@ function App() {
   return (
     <div className="App">
       <h1> slider </h1>{" "}
+      <div>
+        {people.map((person, index) => {
+          const { id, image, name, quote, title } = person;
+
+          return (
+            <div key={id} className="card">
+              <img className="user-img" src={image} alt={name} />
+              <h2>{name}</h2>
+              <h3>{title}</h3>
+              <p>{quote}</p>
+            </div>
+          );
+        })}
+        <button className="prev">
+          <FiChevronLeft />
+        </button>
+        <button className="next">
+          <FiChevronRight />
+        </button>
+      </div>
     </div>
   );
 }
