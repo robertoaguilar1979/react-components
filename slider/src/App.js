@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <h1> slider </h1>{" "}
-      <div>
+      <div className="person">
         {people.map((person, index) => {
           const { id, image, name, quote, title } = person;
 
