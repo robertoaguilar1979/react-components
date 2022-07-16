@@ -12,12 +12,12 @@ function App() {
   return (
     <div className="App">
       <h1> slider </h1>{" "}
-      <div className="person">
+      <div className="section-center">
         {people.map((person, index) => {
           const { id, image, name, quote, title } = person;
 
           return (
-            <div key={id} className="card">
+            <div key={id} className="article">
               <img className="user-img" src={image} alt={name} />
               <h2>{name}</h2>
               <h3>{title}</h3>

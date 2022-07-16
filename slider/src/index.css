@@ -4,12 +4,25 @@
   box-sizing: border-box;
 }
 
-.person {
+.section-center {
   margin: 0 auto;
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
 }
-.card {
+
+.article {
   max-width: 640px;
   margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 
 .user-img {
